@@ -1,6 +1,6 @@
 import nats from 'node-nats-streaming';
 import { randomBytes } from 'crypto';
-import { TicketCreatedListener } from './events/ticketCreatedListener';
+import { TicketCreatedListener } from './events/TicketCreatedListener';
 
 const stan = nats.connect('ticketing', randomBytes(4).toString('hex'), {
   url: 'http://localhost:4222',
